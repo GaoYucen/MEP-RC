@@ -1,12 +1,15 @@
 # MEP-RC
 
+Environment:
+- python 3.9
+
 Structure:
 - code
   - data_con.py: 根据北京路网数据以uniform random的方式选择多侯选边，形成模拟订单
 
 - data
   - bj_link_info_add_geo_2022110912_ds: 北京的路网数据
-  - link_feature: 北京二环内的道路特征信息
+  - link_feature: 北京二环内的道路特征信息，含80700条字段，共79531条边，62622个节点
   - sample_order.txt: 生成的模拟订单数据
 
 Note:
