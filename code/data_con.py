@@ -6,10 +6,10 @@ import random
 
 # Define the file path
 filepath = "../data/link_feature.txt"
-linkpath = '../data/bj_link_info_add_geo_2022110912_ds'
+mappath = '../data/bj_link_info_add_geo_2022110912_ds'
 
 link_map = pd.read_csv(filepath, sep='\t')
-map = pd.read_csv(linkpath, sep=' ', header=None, names = ['link_ID', 'SnodeID', 'EnodeID', 'fc', 'Length', 'upper_link', 'low_link'])
+map = pd.read_csv(mappath, sep=' ', header=None, names = ['link_ID', 'SnodeID', 'EnodeID', 'fc', 'Length', 'upper_link', 'low_link'])
 
 #%%
 link_list = link_map['link_ID'].tolist()
