@@ -6,7 +6,8 @@ Environment:
 Structure:
 - code
   - data_con.py: 根据北京路网数据以uniform random的方式选择多侯选边，形成模拟订单
-
+  - data_label.py: 针对模拟数据生成length和序列结果
+  
 - data
   - bj_link_info_add_geo_2022110912_ds: 北京的路网数据
   - link_feature: 北京二环内的道路特征信息，含80700条字段，共79531条边，62622个节点
