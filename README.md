@@ -6,7 +6,12 @@ Environment:
 Structure:
 - code
   - data_con.py: 根据北京路网数据以uniform random的方式选择多侯选边，形成模拟订单
-  - data_label.py: 针对模拟数据生成length和序列结果
+  
+  - data_label.py: 针对模拟数据生成length、link和序列结果，保存格式为
+  
+    dict: {'Length': [], 'Link': [], 'Sequence': []}，其中Link和Sequence为二维list，Link对应[-1, 0, 2, 1, 3]顺序下的最合适的边
+  
+    补充：[-1, 0, 2, 1, 3]分别表示司机、乘客1上车、乘客2上车、乘客1下车、乘客2下车
   
 - data
   - bj_link_info_add_geo_2022110912_ds: 北京的路网数据
